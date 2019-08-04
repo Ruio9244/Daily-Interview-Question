@@ -61,6 +61,57 @@
   - [第 56 题：要求设计 LazyMan 类，实现以下功能。](#%E7%AC%AC-56-%E9%A2%98%E8%A6%81%E6%B1%82%E8%AE%BE%E8%AE%A1-lazyman-%E7%B1%BB%E5%AE%9E%E7%8E%B0%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD)
   - [第 57 题：分析比较 opacity: 0、visibility: hidden、display: none 优劣和适用场景。](#%E7%AC%AC-57-%E9%A2%98%E5%88%86%E6%9E%90%E6%AF%94%E8%BE%83-opacity-0visibility-hiddendisplay-none-%E4%BC%98%E5%8A%A3%E5%92%8C%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF)
   - [第 58 题：箭头函数与普通函数（function）的区别是什么？构造函数（function）可以使用 new 生成实例，那么箭头函数可以吗？为什么？](#%E7%AC%AC-58-%E9%A2%98%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0function%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0function%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8-new-%E7%94%9F%E6%88%90%E5%AE%9E%E4%BE%8B%E9%82%A3%E4%B9%88%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E5%90%97%E4%B8%BA%E4%BB%80%E4%B9%88)
+  - [第 59 题：给定两个数组，写一个方法来计算它们的交集。](#%E7%AC%AC-59-%E9%A2%98%E7%BB%99%E5%AE%9A%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E5%86%99%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E6%9D%A5%E8%AE%A1%E7%AE%97%E5%AE%83%E4%BB%AC%E7%9A%84%E4%BA%A4%E9%9B%86)
+  - [第 60 题：已知如下代码，如何修改才能让图片宽度为 300px ？注意下面代码不可修改。](#%E7%AC%AC-60-%E9%A2%98%E5%B7%B2%E7%9F%A5%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E6%89%8D%E8%83%BD%E8%AE%A9%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6%E4%B8%BA-300px-%E6%B3%A8%E6%84%8F%E4%B8%8B%E9%9D%A2%E4%BB%A3%E7%A0%81%E4%B8%8D%E5%8F%AF%E4%BF%AE%E6%94%B9)
+  - [第 61 题：介绍下如何实现 token 加密](#%E7%AC%AC-61-%E9%A2%98%E4%BB%8B%E7%BB%8D%E4%B8%8B%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0-token-%E5%8A%A0%E5%AF%86)
+  - [第 62 题：redux 为什么要把 reducer 设计成纯函数](#%E7%AC%AC-62-%E9%A2%98redux-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A-reducer-%E8%AE%BE%E8%AE%A1%E6%88%90%E7%BA%AF%E5%87%BD%E6%95%B0)
+  - [第 63 题：如何设计实现无缝轮播](#%E7%AC%AC-63-%E9%A2%98%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E5%AE%9E%E7%8E%B0%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD)
+  - [第 64 题：模拟实现一个 Promise.finally](#%E7%AC%AC-64-%E9%A2%98%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA-promisefinally)
+  - [第 65 题： `a.b.c.d` 和 `a['b']['c']['d']`，哪个性能更高？](#%E7%AC%AC-65-%E9%A2%98-abcd-%E5%92%8C-abcd%E5%93%AA%E4%B8%AA%E6%80%A7%E8%83%BD%E6%9B%B4%E9%AB%98)
+  - [第 66 题：ES6 代码转成 ES5 代码的实现思路是什么](#%E7%AC%AC-66-%E9%A2%98es6-%E4%BB%A3%E7%A0%81%E8%BD%AC%E6%88%90-es5-%E4%BB%A3%E7%A0%81%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF%E6%98%AF%E4%BB%80%E4%B9%88)
+  - [第 67 题：数组编程题](#%E7%AC%AC-67-%E9%A2%98%E6%95%B0%E7%BB%84%E7%BC%96%E7%A8%8B%E9%A2%98)
+  - [第 68 题： 如何解决移动端 Retina 屏 1px 像素问题](#%E7%AC%AC-68-%E9%A2%98-%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E7%A7%BB%E5%8A%A8%E7%AB%AF-retina-%E5%B1%8F-1px-%E5%83%8F%E7%B4%A0%E9%97%AE%E9%A2%98)
+  - [第 69 题： 如何把一个字符串的大小写取反（大写变小写小写变大写），例如 ’AbC' 变成 'aBc' 。](#%E7%AC%AC-69-%E9%A2%98-%E5%A6%82%E4%BD%95%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99%E5%8F%96%E5%8F%8D%E5%A4%A7%E5%86%99%E5%8F%98%E5%B0%8F%E5%86%99%E5%B0%8F%E5%86%99%E5%8F%98%E5%A4%A7%E5%86%99%E4%BE%8B%E5%A6%82-abc-%E5%8F%98%E6%88%90-abc-)
+  - [第 70 题： 介绍下 webpack 热更新原理，是如何做到在不刷新浏览器的前提下更新页面的](#%E7%AC%AC-70-%E9%A2%98-%E4%BB%8B%E7%BB%8D%E4%B8%8B-webpack-%E7%83%AD%E6%9B%B4%E6%96%B0%E5%8E%9F%E7%90%86%E6%98%AF%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E5%9C%A8%E4%B8%8D%E5%88%B7%E6%96%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%89%8D%E6%8F%90%E4%B8%8B%E6%9B%B4%E6%96%B0%E9%A1%B5%E9%9D%A2%E7%9A%84)
+  - [第 71 题： 实现一个字符串匹配算法，从长度为 n 的字符串 S 中，查找是否存在字符串 T，T 的长度是 m，若存在返回所在位置。](#%E7%AC%AC-71-%E9%A2%98-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E4%BB%8E%E9%95%BF%E5%BA%A6%E4%B8%BA-n-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2-s-%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E5%AD%97%E7%AC%A6%E4%B8%B2-tt-%E7%9A%84%E9%95%BF%E5%BA%A6%E6%98%AF-m%E8%8B%A5%E5%AD%98%E5%9C%A8%E8%BF%94%E5%9B%9E%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE)
+  - [第 72 题： 为什么普通 `for` 循环的性能远远高于 `forEach` 的性能，请解释其中的原因。](#%E7%AC%AC-72-%E9%A2%98-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%99%AE%E9%80%9A-for-%E5%BE%AA%E7%8E%AF%E7%9A%84%E6%80%A7%E8%83%BD%E8%BF%9C%E8%BF%9C%E9%AB%98%E4%BA%8E-foreach-%E7%9A%84%E6%80%A7%E8%83%BD%E8%AF%B7%E8%A7%A3%E9%87%8A%E5%85%B6%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9B%A0)
+  - [第 73 题： 介绍下 BFC、IFC、GFC 和 FFC](#%E7%AC%AC-73-%E9%A2%98-%E4%BB%8B%E7%BB%8D%E4%B8%8B-bfcifcgfc-%E5%92%8C-ffc)
+  - [第 74 题： 使用 JavaScript Proxy 实现简单的数据绑定](#%E7%AC%AC-74-%E9%A2%98-%E4%BD%BF%E7%94%A8-javascript-proxy-%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A)
+  - [第 75 题：数组里面有10万个数据，取第一个元素和第10万个元素的时间相差多少](#%E7%AC%AC-75-%E9%A2%98%E6%95%B0%E7%BB%84%E9%87%8C%E9%9D%A2%E6%9C%8910%E4%B8%87%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%8F%96%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E5%92%8C%E7%AC%AC10%E4%B8%87%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9A%84%E6%97%B6%E9%97%B4%E7%9B%B8%E5%B7%AE%E5%A4%9A%E5%B0%91)
+  - [第 76 题：输出以下代码运行结果](#%E7%AC%AC-76-%E9%A2%98%E8%BE%93%E5%87%BA%E4%BB%A5%E4%B8%8B%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C)
+  - [第 77 题：算法题「旋转数组」](#%E7%AC%AC-77-%E9%A2%98%E7%AE%97%E6%B3%95%E9%A2%98%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84)
+  - [第 78 题：Vue 的父组件和子组件生命周期钩子执行顺序是什么](#%E7%AC%AC-78-%E9%A2%98vue-%E7%9A%84%E7%88%B6%E7%BB%84%E4%BB%B6%E5%92%8C%E5%AD%90%E7%BB%84%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E6%98%AF%E4%BB%80%E4%B9%88)
+  - [第 79 题：input 搜索如何防抖，如何处理中文输入](#%E7%AC%AC-79-%E9%A2%98input-%E6%90%9C%E7%B4%A2%E5%A6%82%E4%BD%95%E9%98%B2%E6%8A%96%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5)
+  - [第 80 题：介绍下 Promise.all 使用、原理实现及错误处理](#%E7%AC%AC-80-%E9%A2%98%E4%BB%8B%E7%BB%8D%E4%B8%8B-promiseall-%E4%BD%BF%E7%94%A8%E5%8E%9F%E7%90%86%E5%AE%9E%E7%8E%B0%E5%8F%8A%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86)
+  - [第 81 题：打印出 1 - 10000 之间的所有对称数](#%E7%AC%AC-81-%E9%A2%98%E6%89%93%E5%8D%B0%E5%87%BA-1---10000-%E4%B9%8B%E9%97%B4%E7%9A%84%E6%89%80%E6%9C%89%E5%AF%B9%E7%A7%B0%E6%95%B0)
+  - [第 82 题：周一算法题之「移动零」](#%E7%AC%AC-82-%E9%A2%98%E5%91%A8%E4%B8%80%E7%AE%97%E6%B3%95%E9%A2%98%E4%B9%8B%E7%A7%BB%E5%8A%A8%E9%9B%B6)
+  - [第 83 题：var、let 和 const 区别的实现原理是什么](#%E7%AC%AC-83-%E9%A2%98varlet-%E5%92%8C-const-%E5%8C%BA%E5%88%AB%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88)
+  - [第 84 题：请实现一个 add 函数，满足以下功能。](#%E7%AC%AC-84-%E9%A2%98%E8%AF%B7%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA-add-%E5%87%BD%E6%95%B0%E6%BB%A1%E8%B6%B3%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD)
+  - [第 85 题：react-router 里的 `<Link>` 标签和 `<a>` 标签有什么区别](#%E7%AC%AC-85-%E9%A2%98react-router-%E9%87%8C%E7%9A%84-link-%E6%A0%87%E7%AD%BE%E5%92%8C-a-%E6%A0%87%E7%AD%BE%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
+  - [第 86 题：周一算法题之「两数之和」](#%E7%AC%AC-86-%E9%A2%98%E5%91%A8%E4%B8%80%E7%AE%97%E6%B3%95%E9%A2%98%E4%B9%8B%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C)
+  - [第 87 题：在输入框中如何判断输入的是一个正确的网址。](#%E7%AC%AC-87-%E9%A2%98%E5%9C%A8%E8%BE%93%E5%85%A5%E6%A1%86%E4%B8%AD%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E8%BE%93%E5%85%A5%E7%9A%84%E6%98%AF%E4%B8%80%E4%B8%AA%E6%AD%A3%E7%A1%AE%E7%9A%84%E7%BD%91%E5%9D%80)
+  - [第 88 题：实现 convert 方法，把原始 list 转换成树形结构，要求尽可能降低时间复杂度](#%E7%AC%AC-88-%E9%A2%98%E5%AE%9E%E7%8E%B0-convert-%E6%96%B9%E6%B3%95%E6%8A%8A%E5%8E%9F%E5%A7%8B-list-%E8%BD%AC%E6%8D%A2%E6%88%90%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84%E8%A6%81%E6%B1%82%E5%B0%BD%E5%8F%AF%E8%83%BD%E9%99%8D%E4%BD%8E%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6)
+  - [第 89 题：设计并实现 Promise.race()](#%E7%AC%AC-89-%E9%A2%98%E8%AE%BE%E8%AE%A1%E5%B9%B6%E5%AE%9E%E7%8E%B0-promiserace)
+  - [第 90 题：实现模糊搜索结果的关键词高亮显示](#%E7%AC%AC-90-%E9%A2%98%E5%AE%9E%E7%8E%B0%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E7%9A%84%E5%85%B3%E9%94%AE%E8%AF%8D%E9%AB%98%E4%BA%AE%E6%98%BE%E7%A4%BA)
+  - [第 91 题：介绍下 HTTPS 中间人攻击](#%E7%AC%AC-91-%E9%A2%98%E4%BB%8B%E7%BB%8D%E4%B8%8B-https-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB)
+  - [第 92 题：已知数据格式，实现一个函数 fn 找出链条中所有的父级 id](#%E7%AC%AC-92-%E9%A2%98%E5%B7%B2%E7%9F%A5%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0-fn-%E6%89%BE%E5%87%BA%E9%93%BE%E6%9D%A1%E4%B8%AD%E6%89%80%E6%9C%89%E7%9A%84%E7%88%B6%E7%BA%A7-id)
+  - [第 93 题：给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。请找出这两个有序数组的中位数。要求算法的时间复杂度为 O(log(m+n))。](#%E7%AC%AC-93-%E9%A2%98%E7%BB%99%E5%AE%9A%E4%B8%A4%E4%B8%AA%E5%A4%A7%E5%B0%8F%E4%B8%BA-m-%E5%92%8C-n-%E7%9A%84%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84-nums1-%E5%92%8C-nums2%E8%AF%B7%E6%89%BE%E5%87%BA%E8%BF%99%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0%E8%A6%81%E6%B1%82%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%BA-ologmn)
+  - [第 94 题：vue 在 v-for 时给每项元素绑定事件需要用事件代理吗？为什么？](#%E7%AC%AC-94-%E9%A2%98vue-%E5%9C%A8-v-for-%E6%97%B6%E7%BB%99%E6%AF%8F%E9%A1%B9%E5%85%83%E7%B4%A0%E7%BB%91%E5%AE%9A%E4%BA%8B%E4%BB%B6%E9%9C%80%E8%A6%81%E7%94%A8%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86%E5%90%97%E4%B8%BA%E4%BB%80%E4%B9%88)
+  - [第 95 题：模拟实现一个深拷贝，并考虑对象相互引用以及 Symbol 拷贝的情况](#%E7%AC%AC-95-%E9%A2%98%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%B9%B6%E8%80%83%E8%99%91%E5%AF%B9%E8%B1%A1%E7%9B%B8%E4%BA%92%E5%BC%95%E7%94%A8%E4%BB%A5%E5%8F%8A-symbol-%E6%8B%B7%E8%B4%9D%E7%9A%84%E6%83%85%E5%86%B5)
+  - [第 96 题：介绍下前端加密的常见场景和方法](#%E7%AC%AC-96-%E9%A2%98%E4%BB%8B%E7%BB%8D%E4%B8%8B%E5%89%8D%E7%AB%AF%E5%8A%A0%E5%AF%86%E7%9A%84%E5%B8%B8%E8%A7%81%E5%9C%BA%E6%99%AF%E5%92%8C%E6%96%B9%E6%B3%95)
+  - [第 97 题：React 和 Vue 的 diff 时间复杂度从 O(n^3) 优化到 O(n) ，那么 O(n^3) 和 O(n) 是如何计算出来的？](#%E7%AC%AC-97-%E9%A2%98react-%E5%92%8C-vue-%E7%9A%84-diff-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%8E-on%5E3-%E4%BC%98%E5%8C%96%E5%88%B0-on-%E9%82%A3%E4%B9%88-on%5E3-%E5%92%8C-on-%E6%98%AF%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E5%87%BA%E6%9D%A5%E7%9A%84)
+  - [第 98 题：写出如下代码的打印结果](#%E7%AC%AC-98-%E9%A2%98%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
+  - [第 99 题：编程算法题](#%E7%AC%AC-99-%E9%A2%98%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95%E9%A2%98)
+  - [第 100 题：请写出如下代码的打印结果](#%E7%AC%AC-100-%E9%A2%98%E8%AF%B7%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
+  - [第 101 题：修改以下 print 函数，使之输出 0 到 99，或者 99 到 0](#%E7%AC%AC-101-%E9%A2%98%E4%BF%AE%E6%94%B9%E4%BB%A5%E4%B8%8B-print-%E5%87%BD%E6%95%B0%E4%BD%BF%E4%B9%8B%E8%BE%93%E5%87%BA-0-%E5%88%B0-99%E6%88%96%E8%80%85-99-%E5%88%B0-0)
+  - [第 102 题：不用加减乘除运算符，求整数的7倍](#%E7%AC%AC-102-%E9%A2%98%E4%B8%8D%E7%94%A8%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E8%BF%90%E7%AE%97%E7%AC%A6%E6%B1%82%E6%95%B4%E6%95%B0%E7%9A%847%E5%80%8D)
+  - [第 103 题：模拟实现一个 localStorage](#%E7%AC%AC-103-%E9%A2%98%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA-localstorage)
+  - [第 104 题：模拟 localStorage 时如何实现过期时间功能](#%E7%AC%AC-104-%E9%A2%98%E6%A8%A1%E6%8B%9F-localstorage-%E6%97%B6%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%BF%87%E6%9C%9F%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD)
+  - [第 105 题：编程题](#%E7%AC%AC-105-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98)
+  - [第 106 题：分别写出如下代码的返回值](#%E7%AC%AC-106-%E9%A2%98%E5%88%86%E5%88%AB%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC)
+  - [第 107 题：考虑到性能问题，如何快速从一个巨大的数组中随机获取部分元素。](#%E7%AC%AC-107-%E9%A2%98%E8%80%83%E8%99%91%E5%88%B0%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BB%8E%E4%B8%80%E4%B8%AA%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%95%B0%E7%BB%84%E4%B8%AD%E9%9A%8F%E6%9C%BA%E8%8E%B7%E5%8F%96%E9%83%A8%E5%88%86%E5%85%83%E7%B4%A0)
+  - [第 108 题：请写出如下代码的打印结果](#%E7%AC%AC-108-%E9%A2%98%E8%AF%B7%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
+  - [第 109 题：扩展题，请写出如下代码的打印结果](#%E7%AC%AC-109-%E9%A2%98%E6%89%A9%E5%B1%95%E9%A2%98%E8%AF%B7%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -73,6 +124,8 @@
 
 
 ### 第 1 题：写 React / Vue 项目时为什么要在列表组件中写 key，其作用是什么？
+
+公司：滴滴、饿了么
 
 解析：[第 1 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/1)
 
@@ -89,6 +142,8 @@
 
 
 ### 第 3 题：什么是防抖和节流？有什么区别？如何实现？
+
+公司：挖财
 
 解析：[第 3 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/5)
 
@@ -138,7 +193,9 @@
 
 ### 第 9 题：Async/Await 如何通过同步的方式实现异步
 
-欢迎在 Issue 区留下你的答案。
+公司：头条、微医
+
+解析：[第 9 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/156)
 
 <br/>
 
@@ -173,6 +230,8 @@ console.log('script end');
 
 解析：[第 10 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/7)
 
+公司：头条
+
 <br/>
 
 
@@ -185,6 +244,8 @@ console.log('script end');
 >
 > 编写一个程序将数组扁平化去并除其中重复部分数据，最终得到一个升序且不重复的数组
 
+公司：携程
+
 解析：[第 11 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/8)
 
 <br/>
@@ -192,6 +253,8 @@ console.log('script end');
 
 
 ### 第 12 题：JS 异步解决方案的发展历程以及优缺点。
+
+公司：滴滴、挖财、微医、海康
 
 解析：[第 12 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/11)
 
@@ -201,6 +264,8 @@ console.log('script end');
 
 ### 第 13 题：Promise 构造函数是同步执行还是异步执行，那么 then 方法呢？
 
+公司：微医
+
 解析：[第 13 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/19)
 
 <br/>
@@ -209,6 +274,8 @@ console.log('script end');
 
 ### 第 14 题：情人节福利题，如何实现一个 new
 
+公司：兑吧
+
 解析：[第 14 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/12)
 
 <br/>
@@ -216,6 +283,8 @@ console.log('script end');
 
 
 ### 第 15 题：简单讲解一下http2的多路复用
+
+公司：网易
 
 解析：[第 15 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/14)
 
@@ -242,6 +311,8 @@ console.log('script end');
 
 
 ### 第 18 题：React 中 setState 什么时候是同步的，什么时候是异步的？
+
+公司：微医
 
 解析：[第 18 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/17)
 
@@ -473,6 +544,8 @@ if(a == 1 && a == 2 && a == 3){
 
 解析：[第 38 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/57)
 
+公司：京东
+
 <br/>
 
 
@@ -599,6 +672,8 @@ console.log(obj)
 
 解析：[第 50 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/88)
 
+公司：百度
+
 <br/>
 
 
@@ -699,6 +774,733 @@ LazyMan('Tony').eat('lunch').eat('dinner').sleepFirst(5).sleep(10).eat('junk foo
 ### 第 58 题：箭头函数与普通函数（function）的区别是什么？构造函数（function）可以使用 new 生成实例，那么箭头函数可以吗？为什么？
 
 解析：[第 58 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/101)
+
+<br/>
+
+
+
+### 第 59 题：给定两个数组，写一个方法来计算它们的交集。
+
+> 例如：给定 nums1 = [1, 2, 2, 1]，nums2 = [2, 2]，返回 [2, 2]。
+
+解析：[第 59 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/102)
+
+<br/>
+
+
+
+### 第 60 题：已知如下代码，如何修改才能让图片宽度为 300px ？注意下面代码不可修改。
+
+> `<img src="1.jpg" style="width:480px!important;”>`
+
+解析：[第 60 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/105)
+
+<br/>
+
+
+
+### 第 61 题：介绍下如何实现 token 加密
+
+解析：[第 61 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/106)
+
+<br/>
+
+
+
+### 第 62 题：redux 为什么要把 reducer 设计成纯函数
+
+解析：[第 62 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/107)
+
+<br/>
+
+
+
+### 第 63 题：如何设计实现无缝轮播
+
+解析：[第 63 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/108)
+
+<br/>
+
+
+
+### 第 64 题：模拟实现一个 Promise.finally
+
+解析：[第 64 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
+
+<br/>
+
+
+
+### 第 65 题： `a.b.c.d` 和 `a['b']['c']['d']`，哪个性能更高？
+
+解析：[第 65 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/111)
+
+<br/>
+
+
+
+### 第 66 题：ES6 代码转成 ES5 代码的实现思路是什么
+
+解析：[第 66 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/112)
+
+<br/>
+
+
+
+### 第 67 题：数组编程题
+
+随机生成一个长度为 10 的整数类型的数组，例如 `[2, 10, 3, 4, 5, 11, 10, 11, 20]`，将其排列成一个新数组，要求新数组形式如下，例如 `[[2, 3, 4, 5], [10, 11], [20]]`。
+
+解析：[第 67 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/113)
+
+<br/>
+
+
+
+### 第 68 题： 如何解决移动端 Retina 屏 1px 像素问题
+
+解析：[第 68 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/115)
+
+<br/>
+
+
+
+### 第 69 题： 如何把一个字符串的大小写取反（大写变小写小写变大写），例如 ’AbC' 变成 'aBc' 。
+
+解析：[第 69 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/116)
+
+<br/>
+
+
+
+### 第 70 题： 介绍下 webpack 热更新原理，是如何做到在不刷新浏览器的前提下更新页面的
+
+解析：[第 70 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/118)
+
+<br/>
+
+
+
+### 第 71 题： 实现一个字符串匹配算法，从长度为 n 的字符串 S 中，查找是否存在字符串 T，T 的长度是 m，若存在返回所在位置。
+
+解析：[第 71 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/119)
+
+<br/>
+
+
+
+### 第 72 题： 为什么普通 `for` 循环的性能远远高于 `forEach` 的性能，请解释其中的原因。
+
+![image-20190512225510941](https://ws2.sinaimg.cn/large/006tNc79gy1g2yxbg4ta8j31gh0u048h.jpg)
+
+
+
+解析：[第 72 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/121)
+
+<br/>
+
+
+
+### 第 73 题： 介绍下 BFC、IFC、GFC 和 FFC
+
+解析：[第 73 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/122)
+
+<br/>
+
+
+
+### 第 74 题： 使用 JavaScript Proxy 实现简单的数据绑定
+
+解析：[第 74 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/123)
+
+<br/>
+
+
+
+### 第 75 题：数组里面有10万个数据，取第一个元素和第10万个元素的时间相差多少
+
+解析：[第 75 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/124)
+
+<br/>
+
+
+
+### 第 76 题：输出以下代码运行结果
+
+```js
+// example 1
+var a={}, b='123', c=123;  
+a[b]='b';
+a[c]='c';  
+console.log(a[b]);
+
+---------------------
+// example 2
+var a={}, b=Symbol('123'), c=Symbol('123');  
+a[b]='b';
+a[c]='c';  
+console.log(a[b]);
+
+---------------------
+// example 3
+var a={}, b={key:'123'}, c={key:'456'};  
+a[b]='b';
+a[c]='c';  
+console.log(a[b]);
+```
+
+解析：[第 76 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/125)
+
+<br/>
+
+
+
+### 第 77 题：算法题「旋转数组」
+
+> 给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。
+
+示例 1：
+
+```js
+输入: [1, 2, 3, 4, 5, 6, 7] 和 k = 3
+输出: [5, 6, 7, 1, 2, 3, 4]
+解释:
+向右旋转 1 步: [7, 1, 2, 3, 4, 5, 6]
+向右旋转 2 步: [6, 7, 1, 2, 3, 4, 5]
+向右旋转 3 步: [5, 6, 7, 1, 2, 3, 4]
+```
+
+示例 2：
+
+```js
+输入: [-1, -100, 3, 99] 和 k = 2
+输出: [3, 99, -1, -100]
+解释: 
+向右旋转 1 步: [99, -1, -100, 3]
+向右旋转 2 步: [3, 99, -1, -100]
+```
+
+解析：[第 77 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/126)
+
+<br/>
+
+
+
+### 第 78 题：Vue 的父组件和子组件生命周期钩子执行顺序是什么
+
+解析：[第 78 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/128)
+
+<br/>
+
+
+
+### 第 79 题：input 搜索如何防抖，如何处理中文输入
+
+解析：[第 79 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/129)
+
+<br/>
+
+
+
+### 第 80 题：介绍下 Promise.all 使用、原理实现及错误处理
+
+解析：[第 80 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/130)
+
+<br/>
+
+
+
+### 第 81 题：打印出 1 - 10000 之间的所有对称数
+
+> 例如：121、1331 等
+
+解析：[第 81 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/131)
+
+<br/>
+
+
+
+### 第 82 题：周一算法题之「移动零」
+
+> 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+>
+> 示例:
+>
+> ```
+> 输入: [0,1,0,3,12]
+> 输出: [1,3,12,0,0]
+> ```
+>
+> 说明:
+>
+> 1. 必须在原数组上操作，不能拷贝额外的数组。
+>
+> 1. 尽量减少操作次数。
+
+解析：[第 82 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/132)
+
+<br/>
+
+
+
+### 第 83 题：var、let 和 const 区别的实现原理是什么
+
+解析：[第 83 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/133)
+
+<br/>
+
+
+
+### 第 84 题：请实现一个 add 函数，满足以下功能。
+
+> ```js
+> add(1); 			// 1
+> add(1)(2);  	// 3
+> add(1)(2)(3)；// 6
+> add(1)(2, 3); // 6
+> add(1, 2)(3); // 6
+> add(1, 2, 3); // 6
+> ```
+
+解析：[第 84 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/134)
+
+<br/>
+
+
+
+### 第 85 题：react-router 里的 `<Link>` 标签和 `<a>` 标签有什么区别
+
+> 如何禁掉 `<a>` 标签默认事件，禁掉之后如何实现跳转。
+
+解析：[第 85 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/135)
+
+<br/>
+
+
+
+### 第 86 题：周一算法题之「两数之和」
+
+给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
+
+你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
+
+示例：
+
+```js
+给定 nums = [2, 7, 11, 15], target = 9
+
+因为 nums[0] + nums[1] = 2 + 7 = 9
+所以返回 [0, 1]
+```
+
+解析：[第 86 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/136)
+
+公司：京东、快手
+
+<br/>
+
+
+
+### 第 87 题：在输入框中如何判断输入的是一个正确的网址。
+
+解析：[第 87 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/138)
+
+<br/>
+
+
+
+### 第 88 题：实现 convert 方法，把原始 list 转换成树形结构，要求尽可能降低时间复杂度
+
+以下数据结构中，id 代表部门编号，name 是部门名称，parentId 是父部门编号，为 0 代表一级部门，现在要求实现一个 convert 方法，把原始 list 转换成树形结构，parentId 为多少就挂载在该 id 的属性 children 数组下，结构如下：
+
+```js
+// 原始 list 如下
+let list =[
+    {id:1,name:'部门A',parentId:0},
+    {id:2,name:'部门B',parentId:0},
+    {id:3,name:'部门C',parentId:1},
+    {id:4,name:'部门D',parentId:1},
+    {id:5,name:'部门E',parentId:2},
+    {id:6,name:'部门F',parentId:3},
+    {id:7,name:'部门G',parentId:2},
+    {id:8,name:'部门H',parentId:4}
+];
+const result = convert(list, ...);
+
+// 转换后的结果如下
+let result = [
+    {
+      id: 1,
+      name: '部门A',
+      parentId: 0,
+      children: [
+        {
+          id: 3,
+          name: '部门C',
+          parentId: 1,
+          children: [
+            {
+              id: 6,
+              name: '部门F',
+              parentId: 3
+            }, {
+              id: 16,
+              name: '部门L',
+              parentId: 3
+            }
+          ]
+        },
+        {
+          id: 4,
+          name: '部门D',
+          parentId: 1,
+          children: [
+            {
+              id: 8,
+              name: '部门H',
+              parentId: 4
+            }
+          ]
+        }
+      ]
+    },
+  ···
+];
+```
+
+解析：[第 88 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/139)
+
+<br/>
+
+
+
+### 第 89 题：设计并实现 Promise.race()
+
+解析：[第 89 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/140)
+
+<br/>
+
+
+
+### 第 90 题：实现模糊搜索结果的关键词高亮显示
+
+<img src="https://ws3.sinaimg.cn/large/006tNc79ly1g43dykaccuj30u01hc49s.jpg" height="800"/>
+
+解析：[第 90 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/141)
+
+<br/>
+
+
+
+### 第 91 题：介绍下 HTTPS 中间人攻击
+
+解析：[第 91 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/142)
+
+<br/>
+
+
+
+### 第 92 题：已知数据格式，实现一个函数 fn 找出链条中所有的父级 id
+
+> ```js
+> const value = '112'
+> const fn = (value) => {
+> ...
+> }
+> fn(value) // 输出 [1， 11， 112]
+> ```
+
+
+
+<img src="https://ws1.sinaimg.cn/large/006tNc79gy1g45a04ntttj30k20wen01.jpg" height="800"/>
+
+
+
+解析：[第 92 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/143)
+
+<br/>
+
+
+
+### 第 93 题：给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。请找出这两个有序数组的中位数。要求算法的时间复杂度为 O(log(m+n))。
+
+示例 1：
+
+```js
+nums1 = [1, 3]
+nums2 = [2]
+```
+
+中位数是 2.0
+
+示例 2：
+
+```js
+nums1 = [1, 2]
+nums2 = [3, 4]
+```
+
+中位数是(2 + 3) / 2 = 2.5
+
+解析：[第 93 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/144)
+
+<br/>
+
+
+
+### 第 94 题：vue 在 v-for 时给每项元素绑定事件需要用事件代理吗？为什么？
+
+解析：[第 94 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/145)
+
+<br/>
+
+
+
+### 第 95 题：模拟实现一个深拷贝，并考虑对象相互引用以及 Symbol 拷贝的情况
+
+解析：[第 95 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/148)
+
+<br/>
+
+
+
+### 第 96 题：介绍下前端加密的常见场景和方法
+
+解析：[第 96 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/150)
+
+<br/>
+
+
+
+### 第 97 题：React 和 Vue 的 diff 时间复杂度从 O(n^3) 优化到 O(n) ，那么 O(n^3) 和 O(n) 是如何计算出来的？
+
+解析：[第 97 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/151)
+
+<br/>
+
+
+
+### 第 98 题：写出如下代码的打印结果
+
+```js
+function changeObjProperty(o) {
+  o.siteUrl = "http://www.baidu.com"
+  o = new Object()
+  o.siteUrl = "http://www.google.com"
+} 
+let webSite = new Object();
+changeObjProperty(webSite);
+console.log(webSite.siteUrl);
+```
+
+公司：京东
+
+解析：[第 98 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/152)
+
+<br/>
+
+
+
+### 第 99 题：编程算法题
+
+> 用 JavaScript 写一个函数，输入 int 型，返回整数逆序后的字符串。如：输入整型 1234，返回字符串“4321”。要求必须使用递归函数调用，不能用全局变量，输入函数必须只有一个参数传入，必须返回字符串。
+
+公司：bilibili
+
+解析：[第 99 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/153)
+
+<br/>
+
+
+
+### 第 100 题：请写出如下代码的打印结果
+
+> ```js
+> function Foo() {
+> Foo.a = function() {
+>   console.log(1)
+> }
+> this.a = function() {
+>   console.log(2)
+> }
+> }
+> Foo.prototype.a = function() {
+> console.log(3)
+> }
+> Foo.a = function() {
+> console.log(4)
+> }
+> Foo.a();
+> let obj = new Foo();
+> obj.a();
+> Foo.a();
+> ```
+
+
+
+公司：京东
+
+解析：[第 100 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/155)
+
+<br/>
+
+
+
+### 第 101 题：修改以下 print 函数，使之输出 0 到 99，或者 99 到 0
+
+> 要求：
+>
+> 1、只能修改 `setTimeout` 到 `Math.floor(Math.random() * 1000` 的代码
+>
+> 2、不能修改 `Math.floor(Math.random() * 1000`
+>
+> 3、不能使用全局变量
+>
+> ```js
+> function print(n){
+> setTimeout(() => {
+>  console.log(n);
+> }, Math.floor(Math.random() * 1000));
+> }
+> for(var i = 0; i < 100; i++){
+> print(i);
+> }
+> ```
+
+
+
+公司：头条
+
+解析：[第 101 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/158)
+
+<br/>
+
+
+
+### 第 102 题：不用加减乘除运算符，求整数的7倍
+
+解析：[第 102 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/161)
+
+<br/>
+
+
+
+### 第 103 题：模拟实现一个 localStorage
+
+公司：阿里
+
+解析：[第 103 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/166)
+
+<br/>
+
+
+
+### 第 104 题：模拟 localStorage 时如何实现过期时间功能
+
+公司：阿里
+
+解析：[第 104 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/171)
+
+<br/>
+
+
+
+### 第 105 题：编程题
+
+> url有三种情况
+>
+> ```js
+> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=&local_province_id=33
+> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800&local_province_id=33
+> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800,700&local_province_id=33
+> ```
+>
+> 匹配elective后的数字输出（写出你认为的最优解法）:
+>
+> ```js
+> [] || ['800'] || ['800','700']
+> ```
+
+
+
+解析：[第 105 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/177)
+
+<br/>
+
+
+
+### 第 106 题：分别写出如下代码的返回值
+
+> ```js
+> String('11') == new String('11');
+> String('11') === new String('11');
+> ```
+
+
+
+公司：京东
+
+解析：[第 106 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/180)
+
+<br/>
+
+
+
+### 第 107 题：考虑到性能问题，如何快速从一个巨大的数组中随机获取部分元素。
+
+> 比如有个数组有100K个元素，从中不重复随机选取10K个元素。
+
+
+
+解析：[第 107 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/187)
+
+<br/>
+
+
+
+### 第 108 题：请写出如下代码的打印结果
+
+> ```js
+> var name = 'Tom';
+> (function() {
+>  if (typeof name == 'undefined') {
+>      var name = 'Jack';
+>      console.log('Goodbye ' + name);
+>  } else {
+>      console.log('Hello ' + name);
+>  }
+> })();
+> ```
+
+
+
+公司：京东
+
+解析：[第 108 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/190)
+
+<br/>
+
+
+
+### 第 109 题：扩展题，请写出如下代码的打印结果
+
+> ```js
+> var name = 'Tom';
+> (function() {
+>  if (typeof name == 'undefined') {
+>      name = 'Jack';
+>      console.log('Goodbye ' + name);
+>  } else {
+>      console.log('Hello ' + name);
+>  }
+> })();
+> ```
+
+
+
+公司：京东
+
+解析：[第 109 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/198)
 
 <br/>
 
